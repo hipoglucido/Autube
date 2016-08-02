@@ -11,7 +11,7 @@ https://www.youtube.com/watch?v=I0zDdr9FOyM
 
 - 2 Download them with the `downloadLocalPlaylist(urls_path,...)` method
 
-# Downloading online existent lists of songs
+# Downloading online existent playlists
 - 1 Get the url of a youtube playlist, i.e:
 
 `https://www.youtube.com/watch?v=BrBpewHG-wI&list=PLmDTvnzs8qB22Sjh1E2MJq2VCxuit-JNn`
