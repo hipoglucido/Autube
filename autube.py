@@ -16,9 +16,9 @@ MAX_CPUS=4
 CAN_CONVERT=True
 
 try:
-	from pydubs import AudioSegment	
+	from pydub import AudioSegment	
 except ImportError as e:
-	warnings.warn("pydub is not installed so converting downloaded songs to .mp3 won\'t be possible. This is the exception\'s message: \""+e.msg+"\"")
+	warnings.warn("pydub is not installed so converting downloaded songs to .mp3 won\'t be possible.")
 	CAN_CONVERT=False
 
 	
@@ -34,8 +34,9 @@ class Downloader():
 		print("____________________________________________ [",self.counter.prc,"%]\n",url)
 		video = pafy.new(url)
 		audio = video.getbestaudio()
-		for c in ['.','\"','|','/',' ']: #Replace also spaces for avoiding OS problems
-			title=audio.title.replace(c,'_')
+		title = audio.title
+		for c in ['.','\"','|',"'",'/',' ','"','+']: #Replace also spaces for avoiding OS problems
+			title=title.replace(c,'_')
 		title=unidecode(title)
 		output_file=os.path.join(self.output_dir,title+'.'+audio.extension)
 		desired_format='mp3'
@@ -144,10 +145,5 @@ class Counter():
 	def count(self):
 		self.n+=1
 		self.prc="{0:.2f}".format(100*self.n/self.until)
-
-
-
-
-
 
 
