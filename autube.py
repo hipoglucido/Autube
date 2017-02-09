@@ -147,8 +147,3 @@ class Counter():
 		self.prc="{0:.2f}".format(100*self.n/self.until)
 
 
-
-
-
-
-
