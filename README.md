@@ -33,3 +33,6 @@ The way I use this is very confortable and fast:
 - In my case, this specified folder is my Dropbox folder, so the songs are automatically uploaded to the cloud.
 - In my phone I have installed the app [Dropsync](https://play.google.com/store/apps/details?id=com.ttxapps.dropsync&hl=es), so once the files are in the cloud, I run the app from my phone and the songs will be downloaded to my phone (to a folder that you decide when you configure Dropsync).
 - The idea is that you have in your phone a Music app that reads music files from that same folder
+
+# Kown issues
+youtube-dl sometimes complain. When this happens just reinstall it. If it still doesn't work uninstall pafy as well, then reinstall youtube-dl and then install pafy again.
