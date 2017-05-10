@@ -22,3 +22,13 @@ https://www.youtube.com/watch?v=I0zDdr9FOyM
 - Convert downloaded songs to `.mp3` using `ffmpeg` and `pydub`
 - Parallel downloads and conversions (the author encourages a responsible use of this functionality)
 - Python 3 support only
+
+# Youtube songs to phone fast and ez:
+The way I use this is very confortable and fast:
+- I have a `music.txt` file in a place where I have fast access to.
+- I have the `autube.bat` file content with just the execution of the python file `how_to_use.py` (so it has to point to wherever it resides).
+- The file `how_to_use.py` should be configured in such way that it will download the songs of the file `music.txt`. By default it has the configuration for my system and folder structure, just change it to yours.
+- Then I add the repository folder (or wherever `autube.bat` resides) to the PATH in the environment variables, so that you can easily execute it from the command line without having to navigate folders. Once `autube.bat` is executed, the program will start downloading the songs of `music.txt` to the specified folder.
+- In my case, this specified folder is my Dropbox folder, so the songs are automatically uploaded to the cloud.
+- In my phone I have installed the app [Dropsync](https://play.google.com/store/apps/details?id=com.ttxapps.dropsync&hl=es), so once the files are in the cloud, I run the app from my phone and the songs will be downloaded to my phone (to a folder that you decide when you configure Dropsync).
+- The idea is that you have in your phone a Music app that reads music files from that same folder
