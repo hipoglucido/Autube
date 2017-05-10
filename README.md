@@ -26,6 +26,7 @@ https://www.youtube.com/watch?v=I0zDdr9FOyM
 # Youtube songs to phone fast and ez:
 The way I use this is very confortable and fast:
 - I have a `music.txt` file in a place where I have fast access to.
+- Whenever I find a nice song I just look it up in youtube and paste add its link to the `music.txt` file (you can put various, one below the other).
 - I have the `autube.bat` file content with just the execution of the python file `how_to_use.py` (so it has to point to wherever it resides).
 - The file `how_to_use.py` should be configured in such way that it will download the songs of the file `music.txt`. By default it has the configuration for my system and folder structure, just change it to yours.
 - Then I add the repository folder (or wherever `autube.bat` resides) to the PATH in the environment variables, so that you can easily execute it from the command line without having to navigate folders. Once `autube.bat` is executed, the program will start downloading the songs of `music.txt` to the specified folder.
