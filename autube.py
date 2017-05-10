@@ -35,7 +35,7 @@ class Downloader():
 		video = pafy.new(url)
 		audio = video.getbestaudio()
 		title = audio.title
-		for c in ['.','\"','|',"'",'/',' ','"','+']: #Replace also spaces for avoiding OS problems
+		for c in ['.','\"','|',"'",'/',' ','"','+','?']: #Replace also spaces for avoiding OS problems
 			title=title.replace(c,'_')
 		title=unidecode(title)
 		output_file=os.path.join(self.output_dir,title+'.'+audio.extension)

@@ -1,1 +1,1 @@
-python C:\Users\gcvic\Dropbox\pyspace\git\Autube\how_to_use.py
+python C:\Users\gcvic\Dropbox\Repositories\Autube\how_to_use.py

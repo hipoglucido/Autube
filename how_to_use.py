@@ -20,5 +20,5 @@ urls_path='C:\\Users\\gcvic\\Dropbox\\notas\\music.txt'
 dw.downloadLocalPlaylist(urls_path=urls_path,
 						output_dir=output_dir,
 						to_mp3=True,
-						allowParallelism=False)
+						allowParallelism=0)
 
