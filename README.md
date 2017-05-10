@@ -20,5 +20,5 @@ https://www.youtube.com/watch?v=I0zDdr9FOyM
 
 # Features
 - Convert downloaded songs to `.mp3` using `ffmpeg` and `pydub`
-- Parallel downloads and convertions (the author encourages a responsible use of this functionality)
+- Parallel downloads and conversions (the author encourages a responsible use of this functionality)
 - Python 3 support only
