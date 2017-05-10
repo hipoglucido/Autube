@@ -1,6 +1,15 @@
 # Autube
 Download youtube songs fast and easy. It works as high-level interface of the pafy package: https://github.com/mps-youtube/pafy
-# Downloading local lists of songs
+
+## Requirements
+- python 3
+- youtube-dl
+- pafy
+- unicodedecode
+- pydub
+- ffmpeg
+
+## Downloading local lists of songs
 - 1 Create a local `.txt` file with the url songs, i.e:
 
 https://www.youtube.com/watch?v=lqHoAEJBuss
@@ -11,19 +20,20 @@ https://www.youtube.com/watch?v=I0zDdr9FOyM
 
 - 2 Download them with the `downloadLocalPlaylist(urls_path,...)` method
 
-# Downloading online existent playlists
+## Downloading online existent playlists
 - 1 Get the url of a youtube playlist, i.e:
 
 `https://www.youtube.com/watch?v=BrBpewHG-wI&list=PLmDTvnzs8qB22Sjh1E2MJq2VCxuit-JNn`
 
 - 2 Download them with the `downloadPlayList(playlist_url,...)` method
 
-# Features
-- Convert downloaded songs to `.mp3` using `ffmpeg` and `pydub`
+## Features
+- Download individual songs in single/batch mode
+- Download playlists
+- Convert downloaded songs to `.mp3`
 - Parallel downloads and conversions (the author encourages a responsible use of this functionality)
-- Python 3 support only
 
-# Youtube songs to phone fast and ez:
+## Youtube songs to phone fast and ez:
 The way I use this is very confortable and fast:
 - I have a `music.txt` file in a place where I have fast access to.
 - Whenever I find a nice song I just look it up in youtube and paste add its link to the `music.txt` file (you can put various, one below the other).
@@ -34,5 +44,5 @@ The way I use this is very confortable and fast:
 - In my phone I have installed the app [Dropsync](https://play.google.com/store/apps/details?id=com.ttxapps.dropsync&hl=es), so once the files are in the cloud, I run the app from my phone and the songs will be downloaded to my phone (to a folder that you decide when you configure Dropsync).
 - The idea is that you have in your phone a Music app that reads music files from that same folder
 
-# Kown issues
+## Kown issues
 youtube-dl sometimes complain. When this happens just reinstall it. If it still doesn't work uninstall pafy as well, then reinstall youtube-dl and then install pafy again.
