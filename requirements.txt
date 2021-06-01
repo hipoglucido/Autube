@@ -2,4 +2,4 @@ pafy==0.5.1
 pydub==0.16.4
 Unidecode==0.4.19
 youtube-dl==2016.7.30
-urllib3==1.13.1
+urllib3==1.26.5
